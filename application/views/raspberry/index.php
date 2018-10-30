@@ -5,7 +5,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<title>Controllador RaspbBerry Pi</title>
-	<link rel="stylesheet" href="/raspberry-projects/materialize/css/materialize.css">
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
 </head>
 <body>
 <h3 class="center-align">Raspberry pi Control desde PHP</h3>
