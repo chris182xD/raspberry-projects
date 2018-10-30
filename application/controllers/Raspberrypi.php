@@ -26,4 +26,9 @@ class Raspberrypi extends CI_Controller {
 	{
 		$this->load->view('raspberry/monitoreo');
 	}
+	public function encenderled()
+	{
+		system("gpio-g mode 3 out");
+		system("gpio-g write 3 0");
+	}
 }
