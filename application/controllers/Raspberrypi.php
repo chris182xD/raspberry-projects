@@ -28,7 +28,16 @@ class Raspberrypi extends CI_Controller {
 	}
 	public function encenderled()
 	{
-		system("gpio-g mode 3 out");
-		system("gpio-g write 3 0");
+		
+
+		$setmode17 = shell_exec("/usr/local/bin/gpio -g mode 3 out");
+14         if(isset($_GET['on'])){
+15                 $gpio_on = shell_exec("/usr/local/bin/gpio -g write 3 1");
+16                 echo "LED is on";
+17         }
+18         else if(isset($_GET['off'])){
+19                 $gpio_off = shell_exec("/usr/local/bin/gpio -g write 3 0");
+20                 echo "LED is off";
+21         }
 	}
 }
